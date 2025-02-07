@@ -1,0 +1,27 @@
+body {
+  font-size: 18px;
+  background-color: #f8f8fa;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important; /* Para navegadores modernos */
+  }
+  .cell, .day {
+    font-size: 14px !important;
+  }
+
+  .day {
+    border-top: 1px;
+    border-style: solid;
+    border-color: #c1c1c1e0;
+  }
+  
+  .no-print {
+    display: none;
+  }
+}
